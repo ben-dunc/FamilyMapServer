@@ -1,0 +1,47 @@
+-- Created by Benjamin Duncan
+-- on July 15, 2022
+
+-- Database Schema - Code to create tables
+drop table if exists user;
+drop table if exists person;
+drop table if exists event;
+drop table if exists authtoken;
+
+create table user (
+    username    VARCHAR(255)     not null,
+    password    VARCHAR(255)     not null,
+    email       VARCHAR(255)    not null,
+    firstName   VARCHAR(255)    not null,
+    lastName    VARCHAR(255)    not null,
+    gender      CHAR(1)         not null,   			-- either 'f' or 'm'
+    personID    VARCHAR(32)     not null primary key
+	
+);
+
+create table person  (
+    personID    VARCHAR(32)     not null primary key,
+    associatedUsername    VARCHAR(255)     not null,
+    firstName   VARCHAR(255)    not null,
+    lastName    VARCHAR(255)    not null,
+    gender      CHAR(1)         not null, 			-- either 'f' or 'm'
+    fatherID    VARCHAR(32),
+    motherID    VARCHAR(32),
+    spouseID    VARCHAR(32)
+);
+
+create table event (
+    eventID VARCHAR(32)         not null primary key,
+    associatedUsername  VARCHAR(255)     not null,
+    personID    VARCHAR(32)     not null,
+    latitude    FLOAT           not null,
+    longitude   FLOAT           not null,
+    country     VARCHAR(255)    not null,
+    city        VARCHAR(255)    not null,
+    eventType   VARCHAR(255)     not null,
+    year        INTEGER         not null
+);
+
+create table authtoken (
+    authtoken   CHAR(32)        not null primary key,
+    username    VARCHAR(255)     not null
+);
