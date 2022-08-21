@@ -1,6 +1,6 @@
 package DataAccess;
 
-import Containers.Models.Person;
+import Models.Person;
 
 import java.sql.*;
 import java.util.HashSet;

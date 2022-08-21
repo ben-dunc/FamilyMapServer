@@ -1,10 +1,10 @@
 package Services;
 
-import Containers.Models.Event;
-import Containers.Models.Person;
-import Containers.Models.User;
-import Containers.Request.LoadRequest;
-import Containers.Result.LoadResult;
+import Models.Event;
+import Models.Person;
+import Models.User;
+import Request.LoadRequest;
+import Result.LoadResult;
 import DataAccess.EventDao;
 import DataAccess.PersonDao;
 import DataAccess.UserDao;

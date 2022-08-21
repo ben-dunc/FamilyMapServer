@@ -1,8 +1,8 @@
 package myTest.ServiceTest;
 
-import Containers.Models.User;
-import Containers.Request.LoginRequest;
-import Containers.Result.LoginResult;
+import Models.User;
+import Request.LoginRequest;
+import Result.LoginResult;
 import DataAccess.AuthtokenDao;
 import DataAccess.UserDao;
 import Services.LoginService;

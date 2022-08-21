@@ -1,7 +1,7 @@
 package Handlers;
 
-import Containers.Request.LoginRequest;
-import Containers.Result.LoginResult;
+import Request.LoginRequest;
+import Result.LoginResult;
 import Services.LoginService;
 import com.google.gson.Gson;
 import com.sun.net.httpserver.HttpExchange;

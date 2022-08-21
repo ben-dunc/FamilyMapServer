@@ -1,7 +1,7 @@
 package Handlers;
 
-import Containers.Request.LoadRequest;
-import Containers.Result.LoadResult;
+import Request.LoadRequest;
+import Result.LoadResult;
 import Services.LoadService;
 import com.google.gson.Gson;
 import com.sun.net.httpserver.HttpExchange;

@@ -1,6 +1,6 @@
 package Services;
 
-import Containers.Result.ClearResult;
+import Result.ClearResult;
 import DataAccess.AuthtokenDao;
 import DataAccess.EventDao;
 import DataAccess.PersonDao;

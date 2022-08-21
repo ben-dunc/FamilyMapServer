@@ -1,6 +1,6 @@
 package DataAccess;
 
-import Containers.Models.Event;
+import Models.Event;
 
 import java.sql.*;
 import java.util.HashSet;
@@ -61,7 +61,7 @@ public class EventDao {
      */
     public static Event[] getAssociated(Connection connection, String username) throws SQLException {
         Set<Event> events = new HashSet<>();
-        String sql = "select event.* from event where event.associatedUsername = ?";
+        String sql = "select event.* from event where event.associatedUsername = ? order by personID, year, eventType";
 
         try(PreparedStatement stmt = connection.prepareStatement(sql)) {
             stmt.setString(1, username);

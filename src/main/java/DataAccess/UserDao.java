@@ -1,6 +1,6 @@
 package DataAccess;
 
-import Containers.Models.User;
+import Models.User;
 import java.sql.*;
 
 /**

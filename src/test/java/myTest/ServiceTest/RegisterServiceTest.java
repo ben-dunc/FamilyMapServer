@@ -1,8 +1,8 @@
 package myTest.ServiceTest;
 
-import Containers.Models.User;
-import Containers.Request.RegisterRequest;
-import Containers.Result.RegisterResult;
+import Models.User;
+import Request.RegisterRequest;
+import Result.RegisterResult;
 import DataAccess.UserDao;
 import Services.RegisterService;
 import myTest.TestData;

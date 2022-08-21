@@ -1,6 +1,13 @@
 -- Created by Benjamin Duncan
 -- July 20, 2022
 
+-- Clear the whole db
+delete from user;
+delete from person;
+delete from event;
+delete from authtoken;
+
+
 -- ====================== USER ======================
 
 -- Insert a new user into the person base.
@@ -44,12 +51,16 @@ select person.* from person join authtoken on person.associatedUsername = authto
 
 -- Insert a new event into the event table.
 insert into event (eventID, associatedUsername, personID, latitude, longitude, country, city, eventType, year) values (?, ?, ?, ?, ?, ?, ?, ?, ?);
+insert into event (eventID, associatedUsername, personID, latitude, longitude, country, city, eventType, year) 
+					values ("test16", "asdf", "8cf27717", 0.0, 0.0, "Null island", "Null city", "Test16", 2008);
+insert into event (eventID, associatedUsername, personID, latitude, longitude, country, city, eventType, year) 
+					values ("got an ice cream", "asdf", "8cf27717", 1.0, 1.0, "Null island", "Null city", "Got an ice cream", 2008);
 
 -- clear event table
 delete from event;
 
 -- get associated events by authtoken
-select event.* from event join authtoken on event.associatedUsername = authtoken.username where authtoken.authtoken = ?; 
+select event.* from event join authtoken on event.associatedUsername = authtoken.username where authtoken.authtoken = ? order by personID, year, eventType;
 
 -- delete associated events by authtoken
 delete from event where event.associatedUsername = (select authtoken.username from authtoken where authtoken.authtoken = ?); 

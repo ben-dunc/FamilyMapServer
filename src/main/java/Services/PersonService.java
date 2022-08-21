@@ -1,8 +1,8 @@
 package Services;
 
-import Containers.Models.Authtoken;
-import Containers.Models.Person;
-import Containers.Result.PersonResult;
+import Models.Authtoken;
+import Models.Person;
+import Result.PersonResult;
 import DataAccess.AuthtokenDao;
 import DataAccess.PersonDao;
 

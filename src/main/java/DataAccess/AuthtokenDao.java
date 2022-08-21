@@ -1,6 +1,6 @@
 package DataAccess;
 
-import Containers.Models.Authtoken;
+import Models.Authtoken;
 import java.sql.*;
 
 /**

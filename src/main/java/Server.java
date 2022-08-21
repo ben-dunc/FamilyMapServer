@@ -1,11 +1,8 @@
 import java.io.*;
 import java.net.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import Containers.Models.User;
-import DataAccess.UserDao;
+import Models.User;
 import Handlers.*;
 import com.sun.net.httpserver.*;
 

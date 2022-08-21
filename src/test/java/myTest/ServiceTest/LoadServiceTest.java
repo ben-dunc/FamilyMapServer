@@ -1,9 +1,9 @@
 package myTest.ServiceTest;
 
-import Containers.Models.Event;
-import Containers.Models.Person;
-import Containers.Models.User;
-import Containers.Request.LoadRequest;
+import Models.Event;
+import Models.Person;
+import Models.User;
+import Request.LoadRequest;
 import DataAccess.EventDao;
 import DataAccess.PersonDao;
 import DataAccess.UserDao;

@@ -1,8 +1,8 @@
 package Services;
 
-import Containers.Models.Authtoken;
-import Containers.Models.Event;
-import Containers.Result.EventResult;
+import Models.Authtoken;
+import Models.Event;
+import Result.EventResult;
 import DataAccess.AuthtokenDao;
 import DataAccess.EventDao;
 

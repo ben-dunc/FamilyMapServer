@@ -1,9 +1,9 @@
 package myTest;
 
-import Containers.Models.Authtoken;
-import Containers.Models.Event;
-import Containers.Models.Person;
-import Containers.Models.User;
+import Models.Authtoken;
+import Models.Event;
+import Models.Person;
+import Models.User;
 
 public class TestData {
     public static final Authtoken[] authtokens = {

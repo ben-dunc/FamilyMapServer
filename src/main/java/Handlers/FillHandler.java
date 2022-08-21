@@ -1,6 +1,6 @@
 package Handlers;
 
-import Containers.Result.FillResult;
+import Result.FillResult;
 import Services.FillService;
 import com.google.gson.Gson;
 import com.sun.net.httpserver.HttpExchange;

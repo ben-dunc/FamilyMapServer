@@ -1,10 +1,10 @@
 package Services;
 
-import Containers.JSON.*;
-import Containers.Models.Event;
-import Containers.Models.Person;
-import Containers.Models.User;
-import Containers.Result.FillResult;
+import JSON.*;
+import Models.Event;
+import Models.Person;
+import Models.User;
+import Result.FillResult;
 import DataAccess.EventDao;
 import DataAccess.PersonDao;
 import DataAccess.UserDao;

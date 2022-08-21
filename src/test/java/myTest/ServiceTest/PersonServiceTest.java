@@ -1,6 +1,6 @@
 package myTest.ServiceTest;
 
-import Containers.Models.Person;
+import Models.Person;
 import DataAccess.PersonDao;
 import myTest.TestData;
 import myTest.TestHelper;

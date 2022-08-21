@@ -1,6 +1,6 @@
 package myTest.ServiceTest;
 
-import Containers.Models.Event;
+import Models.Event;
 import DataAccess.EventDao;
 import myTest.TestData;
 import myTest.TestHelper;

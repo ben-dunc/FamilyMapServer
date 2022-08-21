@@ -1,6 +1,6 @@
 package Handlers;
 
-import Containers.Result.PersonResult;
+import Result.PersonResult;
 import Services.PersonService;
 import com.google.gson.Gson;
 import com.sun.net.httpserver.Headers;

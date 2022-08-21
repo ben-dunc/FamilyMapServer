@@ -1,6 +1,6 @@
 package Handlers;
 
-import Containers.Result.EventResult;
+import Result.EventResult;
 import Services.EventService;
 import com.google.gson.Gson;
 import com.sun.net.httpserver.Headers;
